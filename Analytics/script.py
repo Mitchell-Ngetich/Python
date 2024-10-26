@@ -33,5 +33,8 @@ def full_name(first_name, last_name):
     first = first_name.capitalize()
     last = last_name.capitalize()
     final_name = first + " " + last
-    # return final_name
+    return final_name
 print(full_name("ser","mitch"))
+
+job = "Data Analyst"
+print(job.replace("a", "o"))
