@@ -39,6 +39,6 @@
 # job = "Data Analyst"
 # print(job.replace("a", "o"))
 
-skills = ["rpa", "salesforce","odex"]
+skills = ["rpa", "salesforce","odex", "Qlikview", "Tableau"]
 # print(type(skills))
 print(",".join(skills))
