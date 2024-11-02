@@ -29,12 +29,16 @@
 #     return a * b
 # print(add(5,9))
 
-def full_name(first_name, last_name):
-    first = first_name.capitalize()
-    last = last_name.capitalize()
-    final_name = first + " " + last
-    return final_name
-print(full_name("ser","mitch"))
+# def full_name(first_name, last_name):
+#     first = first_name.capitalize()
+#     last = last_name.capitalize()
+#     final_name = first + " " + last
+#     return final_name
+# print(full_name("ser","mitch"))
 
-job = "Data Analyst"
-print(job.replace("a", "o"))
+# job = "Data Analyst"
+# print(job.replace("a", "o"))
+
+skills = ["rpa", "salesforce","odex"]
+# print(type(skills))
+print(",".join(skills))
