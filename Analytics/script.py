@@ -39,6 +39,11 @@
 # job = "Data Analyst"
 # print(job.replace("a", "o"))
 
-skills = ["rpa", "salesforce","odex", "Qlikview", "Tableau"]
-# print(type(skills))
-print(",".join(skills))
+# skills = ["rpa", "salesforce","odex", "Qlikview", "Tableau"]
+# # print(type(skills))
+# print(",".join(skills)) 
+
+x = 10
+if x < 5:
+    pass
+else: print("x is equal or less than 5")
