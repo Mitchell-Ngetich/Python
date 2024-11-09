@@ -43,7 +43,11 @@
 # # print(type(skills))
 # print(",".join(skills)) 
 
-x = 10
-if x < 5:
-    pass
-else: print("x is equal or less than 5")
+# x = 10
+# if x > 5:
+#     pass # pass is a keyword that does nothing
+# else: print("x is equal or less than 5")
+#loops
+fruits = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+for fruit in fruits:
+    print(fruit)
