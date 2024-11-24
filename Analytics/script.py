@@ -48,6 +48,9 @@
 #     pass # pass is a keyword that does nothing
 # else: print("x is equal or less than 5")
 #loops
-fruits = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
-for fruit in fruits:
-    print(fruit)
+# fruits = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+# for fruit in fruits:
+#     print(fruit)
+
+numbers =[x for x in range(100)]
+print(numbers)
