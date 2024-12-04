@@ -88,11 +88,24 @@ data_science_jobs = [
     {"job_title": "Operations Research Analyst", "job_skills": "['Optimization','Simulation','R']", "job_date": "2024-11-04"},
 ]
 
-my_time = data_science_jobs[2]["job_date"]
+# my_time = data_science_jobs[2]["job_date"]
 
-format_time = datetime.strptime(my_time, "%Y-%m-%d") #convert string to datetime object
+# format_time = datetime.strptime(my_time, "%Y-%m-%d") #convert string to datetime object
 
-formatted_time = format_time.strftime("%Y-%m-%d") #removes the zeros in the time
+# formatted_time = format_time.strftime("%Y-%m-%d") #removes the zeros in the time to remain only with Y,M,D.
 
-print(formatted_time)
+# print(formatted_time)
 
+# # NOW LOOP IN AND REPLACE THE DATE WITH THE FORMATTED DATE
+# for job in data_science_jobs:
+#     job["job_date"] = formatted_time
+# print(data_science_jobs)
+
+#FILTER JOBS THAT HAVE PYTHON IN JOB SKILLS
+
+
+for job in data_science_jobs:
+    if "python" in job["job_skills"]:
+        print(job)
+    else:
+        print("No python in job skills")
