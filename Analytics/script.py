@@ -104,8 +104,19 @@ data_science_jobs = [
 #FILTER JOBS THAT HAVE PYTHON IN JOB SKILLS
 
 
+# for job in data_science_jobs:
+#     if "python" in job["job_skills"]:
+#         print(job)
+#     else:
+#         print("No python in job skills")
+
+#CONVERTING JOB SKILLS INTO A LIST
+import ast
+
 for job in data_science_jobs:
-    if "python" in job["job_skills"]:
-        print(job)
-    else:
-        print("No python in job skills")
+    job["job_skills"] = ast.literal_eval(job["job_skills"]) #this is more safer than using eval only
+    print(job["job_skills"])
+
+# print(type(job["job_skills"]))
+# print(type(data_science_jobs[0]["job_skills"]))
+print(data_science_jobs)
