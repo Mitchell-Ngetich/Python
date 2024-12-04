@@ -61,6 +61,38 @@
 # print(numbers1)
 
 # MODULES
-import my_module as mine
+# import my_module as mine
 
-print(mine.greetings("Sophie"))
+# print(mine.greetings("Sophie"))
+
+from datetime import datetime, date
+
+time = datetime.now()
+# print(time)
+
+data_science_jobs = [
+    {"job_title": "Data Scientist", "job_skills": "['python','SQL','Machine Learning']", "job_date": "2024-12-04"},
+    {"job_title": "Data Analyst", "job_skills": "['Excel','SQL','Power BI']", "job_date": "2024-12-01"},
+    {"job_title": "Machine Learning Engineer", "job_skills": "['python','TensorFlow','Keras']", "job_date": "2024-11-30"},
+    {"job_title": "Business Intelligence Analyst", "job_skills": "['Tableau','Power BI','SQL']", "job_date": "2024-11-28"},
+    {"job_title": "Big Data Engineer", "job_skills": "['Hadoop','Spark','Kafka']", "job_date": "2024-11-25"},
+    {"job_title": "Data Engineer", "job_skills": "['python','SQL','ETL']", "job_date": "2024-11-23"},
+    {"job_title": "AI Researcher", "job_skills": "['Deep Learning','NLP','PyTorch']", "job_date": "2024-11-22"},
+    {"job_title": "Statistician", "job_skills": "['R','Mathematics','Data Analysis']", "job_date": "2024-11-20"},
+    {"job_title": "Data Architect", "job_skills": "['Database Design','NoSQL','Cloud']", "job_date": "2024-11-18"},
+    {"job_title": "Quantitative Analyst", "job_skills": "['Matlab','Statistics','Python']", "job_date": "2024-11-15"},
+    {"job_title": "ETL Developer", "job_skills": "['ETL','SQL','Informatica']", "job_date": "2024-11-12"},
+    {"job_title": "Data Visualization Specialist", "job_skills": "['D3.js','JavaScript','Tableau']", "job_date": "2024-11-10"},
+    {"job_title": "Database Administrator", "job_skills": "['MySQL','PostgreSQL','Oracle']", "job_date": "2024-11-08"},
+    {"job_title": "Data Governance Analyst", "job_skills": "['Data Quality','Compliance','Policy Management']", "job_date": "2024-11-06"},
+    {"job_title": "Operations Research Analyst", "job_skills": "['Optimization','Simulation','R']", "job_date": "2024-11-04"},
+]
+
+my_time = data_science_jobs[2]["job_date"]
+
+format_time = datetime.strptime(my_time, "%Y-%m-%d") #convert string to datetime object
+
+formatted_time = format_time.strftime("%Y-%m-%d") #removes the zeros in the time
+
+print(formatted_time)
+
