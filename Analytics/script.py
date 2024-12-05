@@ -111,12 +111,16 @@ data_science_jobs = [
 #         print("No python in job skills")
 
 #CONVERTING JOB SKILLS INTO A LIST
-import ast
+# import ast
 
-for job in data_science_jobs:
-    job["job_skills"] = ast.literal_eval(job["job_skills"]) #this is more safer than using eval only
-    print(job["job_skills"])
+# for job in data_science_jobs:
+#     job["job_skills"] = ast.literal_eval(job["job_skills"]) #this is more safer than using eval only
+#     print(job["job_skills"])
 
 # print(type(job["job_skills"]))
 # print(type(data_science_jobs[0]["job_skills"]))
-print(data_science_jobs)
+# print(data_science_jobs)
+
+import pyjokes
+
+print(pyjokes.get_joke())
