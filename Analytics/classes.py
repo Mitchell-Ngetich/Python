@@ -5,9 +5,8 @@ class Employee:
         self.salary =  salary
         self.email = first + "." + last + "@company.com"
     
-    def __str__(self):
-        return f'Employee({self.first}, {self.last}, {self.salary}, {self.email})'
-    
-emp_1 = Employee(Mitchell, Ngetich, 5000)
-print(emp_1)
+emp_1 = Employee("Mitchell", "Ngetich", 5000)
+print(emp_1.email)
+print(emp_1.first)
+print(emp_1.last)
 
