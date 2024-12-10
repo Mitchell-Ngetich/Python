@@ -5,8 +5,11 @@ class Employee:
         self.salary =  salary
         self.email = first + "." + last + "@company.com"
     
+    def fullname(self):
+        return f"{self.first} {self.last}" #always use two braces
+    
 emp_1 = Employee("Mitchell", "Ngetich", 5000)
-print(emp_1.email)
-print(emp_1.first)
-print(emp_1.last)
+print(Employee.fullname(emp_1))
+
+print(emp_1.fullname())
 
