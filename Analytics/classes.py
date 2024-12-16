@@ -33,4 +33,34 @@ import random
 
 salary_list = [random.randint(1000, 500000) for int in range(100000)]
 import statistics
-print(statistics.mean(salary_list))
+
+# import timeit
+# print(statistics.mean(salary_list))
+
+import numpy as np
+# a = np.array([1,2,3])
+# print(a.mean())
+
+# job_titles = np.array([6000, 80000, 75000])
+
+# EXCERCISE
+# You are given the scores of students in three subjects: Math, Science, and English.
+# Your task is to perform the following operations using NumPy:
+# a) Create a NumPy array with the scores of 5 students in each subject.
+# b) Calculate the average score for each subject.
+# c) Determine which student has the highest score in each subject.
+# d) Calculate the overall average score for all students across all subjects.
+# e) Create a new array that contains only the scores of students who scored above the overall average in all subjects
+
+scores = np.array([
+    [80, 60, 70],
+    [50, 60, 56],
+    [58, 67, 90],
+    [88, 89, 78],
+    [90, 80, 60]
+])
+
+subjects = ["Math", "Science", "English"]
+
+subjects_mean = np.mean(scores, axis = 0)
+print(subjects_mean)
