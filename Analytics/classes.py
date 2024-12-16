@@ -16,14 +16,21 @@
 
 # print(emp_1.fullname())
 
-class Salary:
-    def __init__(self, base_salary,bonus):
-        self.base_salary = base_salary
-        self.bonus = bonus
+# class Salary:
+#     def __init__(self, base_salary,bonus):
+#         self.base_salary = base_salary
+#         self.bonus = bonus
 
-    def Total_salary(self):
-        return f"{self.base_salary + self.bonus}"
+#     def Total_salary(self):
+#         return f"{self.base_salary + self.bonus}"
 
-emp_salary = Salary(50000, 20000)
-print(emp_salary.Total_salary())
+# emp_salary = Salary(50000, 20000)
+# print(emp_salary.Total_salary())
 
+#NUMPY
+
+import random
+
+salary_list = [random.randint(1000, 500000) for int in range(100000)]
+import statistics
+print(statistics.mean(salary_list))
