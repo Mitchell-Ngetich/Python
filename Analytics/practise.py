@@ -37,5 +37,8 @@ import numpy as np
 # zeros_array = np.zeros((2, 3)) 
 # print(zeros_array)
 
-ones_array = np.twos((3, 4))
-print(ones_array)
+# ones_array = np.ones((3, 4)) #prints an array of 1(3 rows, 4 colums)
+# print(ones_array)
+
+random_array = np.random.randint((2, 2))  # Creates a 2x2 array with random values
+print(random_array)
