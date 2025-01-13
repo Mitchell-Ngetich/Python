@@ -25,9 +25,17 @@
 # total_salary = [salary * 1.2 for salary in Salary]
 # print(total_salary)
 
-def calculate_salary(salary, bonus = 1.2):
-    return salary * bonus
+# def calculate_salary(salary, bonus = 1.2):
+#     return salary * bonus
 
-Salary = [10000, 20000, 30000, 40000, 50000]
-total_salary = list(map(calculate_salary, Salary))
-print(total_salary)
+# Salary = [10000, 20000, 30000, 40000, 50000]
+# total_salary = list(map(calculate_salary, Salary))
+# print(total_salary)
+
+import numpy as np
+
+# zeros_array = np.zeros((2, 3)) 
+# print(zeros_array)
+
+ones_array = np.twos((3, 4))
+print(ones_array)
