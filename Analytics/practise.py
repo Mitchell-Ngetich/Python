@@ -40,5 +40,20 @@ import numpy as np
 # ones_array = np.ones((3, 4)) #prints an array of 1(3 rows, 4 colums)
 # print(ones_array)
 
-random_array = np.random.randint((2, 2))  # Creates a 2x2 array with random values
-print(random_array)
+# random_array = np.random.random((2, 2))  # Creates a 2x2 array with random values
+# print(random_array)
+# np.random is a module, not a direct function. It contains various functions for generating random numbers, such as:
+# np.random.random(): For random floats between 0 and 1.
+# np.random.randint(): For random integers.
+# np.random.normal(): For random numbers from a normal (Gaussian) distribution.
+# np.random.rand(): For uniformly distributed random numbers, with simpler syntax for arrays.
+
+# PANDAS
+import pandas as pd
+
+from datasets import load_dataset
+
+dataset = load_dataset("glaiveai/glaive-function-calling-v2")
+df = dataset["train"].to_pandas()
+print(df)
+
