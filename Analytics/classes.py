@@ -52,6 +52,8 @@ import numpy as np
 # d) Calculate the overall average score for all students across all subjects.
 # e) Create a new array that contains only the scores of students who scored above the overall average in all subjects
 
+
+# a) Create a NumPy array with the scores of 5 students in each subject.
 scores = np.array([
     [80, 60, 70],
     [50, 60, 56],
@@ -62,5 +64,27 @@ scores = np.array([
 
 subjects = ["Math", "Science", "English"]
 
+# b) Calculate the average score for each subject.
 subjects_mean = np.mean(scores, axis = 0)
 print(subjects_mean)
+
+# c) Determine which student has the highest score in each subject.
+highest_score = scores.max(axis = 0) #calculates max in each column
+
+for i, subject in enumerate(subjects):
+    print(f"{subject} : {highest_score[i]}")
+
+#  d) Calculate the overall average score for all students across all subjects
+overall_mean = np.mean(scores)
+print(overall_mean)
+
+#  e) Create a new array that contains only the scores of students who scored above the overall average in all subjects
+
+new_array = []
+
+for score in scores:
+    if np.all(score > overall_mean):
+        new_array.append(score)
+
+new_array = np.array(new_array)
+print(new_array)
