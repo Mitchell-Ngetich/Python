@@ -49,11 +49,14 @@ import numpy as np
 # np.random.rand(): For uniformly distributed random numbers, with simpler syntax for arrays.
 
 # PANDAS
-import pandas as pd
+# import pandas as pd
 
 from datasets import load_dataset
 
-dataset = load_dataset("glaiveai/glaive-function-calling-v2")
+dataset = load_dataset("lukebarousse/data_jobs")
 df = dataset["train"].to_pandas()
-print(df)
+print(df.info())
+
+
+# DATA CLEANING
 
