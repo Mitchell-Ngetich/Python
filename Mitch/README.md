@@ -35,3 +35,9 @@ plt.show()
 ### Results
 
 ![Visualization of Top Skills](3_Project\Images\top_skills.png)
+
+### Insights
+
+- Python is a versatile skill, highly demanded across all the 3 roles, but mostly prominently for DS(72%) and DE(65%).
+- SQL is the most requested skill for DA and DS, with it in over half the job posting for both roles. For DE, Python is the most sought skill with a percentage of 68%.
+-  Data Engineers require more specialized technical skills(AWS, Azure, Spark) compared to Data Analysts and Data Scientists who are expected to be proficient in more general data management and analysis tools(Excel, Tableau).
