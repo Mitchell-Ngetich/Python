@@ -34,7 +34,7 @@ plt.show()
 
 ### Results
 
-[Visualization of Top Skills](3_Project/Images/top_skills.png)
+[!Visualization of Top Skills](3_Project/Images/top_skills.png)
 
 ### Insights
 
